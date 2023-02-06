@@ -10,13 +10,96 @@ body {
   display: flex;
 }
 
-.productImage {
-  height: 300px;
-  width: 250px;
-}
-
 .container {
   background-color: white;
-  width: 250px;
+  width: 300px;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+  height: 437px;
+  border-radius: 0rem 0.8rem 0.8rem 0rem;
+}
+
+.brand {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-family: monospace;
+  color: rgb(181, 181, 181);
+  font-size: large;
+  font-weight: 700;
+}
+
+.image {
+  background-image: url("./images/image-product-desktop.jpg");
+  background-size: 350px 500px;
+  width: 350px;
+  height: 500px;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+}
+
+h1 {
+  line-height: 2.5rem;
+  font-size: xxx-large;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.para {
+  color: rgb(181, 181, 181);
+  line-height: 1.5rem;
+  word-spacing: 0.5rem;
+}
+
+.discount {
+  color: rgb(19, 184, 57);
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.actual {
+  text-decoration-line: line-through;
+  color: rgb(181, 181, 181);
+  margin-left: 1.5rem;
+}
+
+.amounts {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.cart {
+  background-color: rgb(19, 184, 57);
+  color: white;
+  height: 3rem;
+  border-radius: 10px;
+}
+
+.cartText {
+  margin-left: 1.5rem;
+}
+
+@media (max-width: 750px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .image {
+    background-image: url("./images/image-product-mobile.jpg");
+    background-size: 364px 500px;
+    width: 364px;
+    height: 250px;
+    border-radius: 0.8rem 0.8rem 0rem 0rem;
+  }
+  .container {
+    border-radius: 0rem 0rem 0.8rem 0.8rem;
+    height: 350px;
+  }
+  h1 {
+    line-height: 2.5rem;
+    font-size: xx-large;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+  }
 }
