@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" role="main">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,10 +27,9 @@
     <link rel="stylesheet" type="text/css" href="./index.css" />
   </head>
   <body>
-    <div class="card">
-      <div class="image"></div>
-      <!-- <img src="./images/image-product-desktop.jpg" class="productImage" /> -->
-      <div class="container">
+    <div class="card" role="application">
+      <div class="image" role="img"></div>
+      <div class="container" role="contentinfo">
         <span class="brand">perfume</span>
         <h1>Gabrielle Essence Eau De Parfum</h1>
         <p class="para">
@@ -42,7 +41,8 @@
           <span class="actual">$169.99</span>
         </span>
         <button class="cart">
-          <img src="./images/icon-cart.svg" /><span class="cartText"
+          <img src="./images/icon-cart.svg" alt="cart-icon" /><span
+            class="cartText"
             >Add to Cart</span
           >
         </button>
