@@ -1,5 +1,5 @@
 body {
-  background-color: hsl(0, 0%, 90%);
+  background-color: hsl(30, 38%, 92%);
 }
 
 .card {
@@ -8,98 +8,116 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
+  width: 36rem;
+  height: 60%;
+}
+
+.image {
+  background-image: url(./images/image-product-desktop.jpg);
+  background-size: 18rem 100%;
+  width: 18rem;
+  height: 100%;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
 }
 
 .container {
   background-color: white;
-  width: 300px;
-  padding: 2rem;
+  width: 13rem;
+  padding: 0rem 2.5rem 0rem 2.5rem;
   display: flex;
   flex-direction: column;
   margin-bottom: auto;
-  height: 437px;
+  height: 100%;
   border-radius: 0rem 0.8rem 0.8rem 0rem;
 }
 
 .brand {
+  padding-top: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-family: monospace;
-  color: rgb(181, 181, 181);
+  color: hsl(228, 12%, 48%);
   font-size: large;
   font-weight: 700;
 }
 
-.image {
-  background-image: url("./images/image-product-desktop.jpg");
-  background-size: 350px 500px;
-  width: 350px;
-  height: 500px;
-  border-radius: 0.8rem 0rem 0rem 0.8rem;
-}
-
 h1 {
-  line-height: 2.5rem;
-  font-size: xxx-large;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  font-family: "Fraunces";
+  font-size: 1.8rem;
+  line-height: 1.8rem;
 }
 
 .para {
-  color: rgb(181, 181, 181);
-  line-height: 1.5rem;
-  word-spacing: 0.5rem;
+  font-size: 0.8rem;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.6em;
 }
 
 .discount {
-  color: rgb(19, 184, 57);
-  font-size: xx-large;
-  font-weight: bolder;
+  font-family: "Fraunces";
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
 }
 
 .actual {
   text-decoration-line: line-through;
-  color: rgb(181, 181, 181);
+  color: hsl(228, 12%, 48%);
   margin-left: 1.5rem;
 }
 
 .amounts {
   display: flex;
-  align-items: center;
   margin-bottom: 1.5rem;
+  justify-content: flex-start;
 }
 
 .cart {
-  background-color: rgb(19, 184, 57);
+  text-align: center;
+  width: 100%;
+  font-family: "Montserrat";
+  padding: 0.8rem;
+  border-radius: 0.6rem;
   color: white;
-  height: 3rem;
-  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+  outline: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: none;
 }
 
-.cartText {
-  margin-left: 1.5rem;
+.cart:hover {
+  background-color: hsl(212, 21%, 14%);
+  cursor: pointer;
+}
+
+.cart img {
+  padding-right: 0.4rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
 }
 
 @media (max-width: 750px) {
   .card {
-    display: flex;
     flex-direction: column;
+    height: 80%;
+    width: 25rem;
   }
   .image {
-    background-image: url("./images/image-product-mobile.jpg");
-    background-size: 364px 500px;
-    width: 364px;
-    height: 250px;
+    background-image: url(./images/image-product-mobile.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 80%;
     border-radius: 0.8rem 0.8rem 0rem 0rem;
   }
   .container {
     border-radius: 0rem 0rem 0.8rem 0.8rem;
-    height: 350px;
+    width: 20rem;
+  }
+  .para {
+    font-size: 1rem;
   }
   h1 {
-    line-height: 2.5rem;
-    font-size: xx-large;
-    margin-bottom: 0rem;
-    margin-top: 1rem;
+    font-size: 2rem;
   }
 }
